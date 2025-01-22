@@ -1,15 +1,16 @@
 import React from "react";
-import SongList from "./components/SongList";
+import MusicList from "./MusicList";  // Asegúrate de importar el componente
 
-function App() {
+const App = () => {
   return (
     <div>
       <h1>Radio Streaming</h1>
-      <SongList />
+      <MusicList />  {/* Aquí llamas al componente que muestra la lista */}
     </div>
   );
-}
+};
 
 export default App;
+
 
 
