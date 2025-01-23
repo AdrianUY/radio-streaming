@@ -1,5 +1,6 @@
 import React from "react";
 
+
 // Lista de nombres reales de los archivos en la carpeta "public/music"
 const files = [
   "Mi_Cancion_Favorita.mp3",
@@ -8,7 +9,8 @@ const files = [
   "Cancion_Final.mp3"
 ];
 
-const MusicList = () => {
+const SongList = () => {
+
   return (
     <div>
       <h1>Music List</h1>
@@ -35,4 +37,5 @@ const MusicList = () => {
   );
 };
 
-export default MusicList;
+export default SongList;
+

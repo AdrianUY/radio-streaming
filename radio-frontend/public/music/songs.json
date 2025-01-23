@@ -1,34 +1,22 @@
-import React, { useEffect, useState } from "react";
-
-const MusicList = () => {
-  const [songs, setSongs] = useState([]);
-
-  useEffect(() => {
-    // Cargar el JSON dinámicamente
-    fetch("/music/songs.json")
-      .then((response) => response.json())
-      .then((data) => setSongs(data))
-      .catch((error) =>
-        console.error("Error al cargar la lista de canciones:", error)
-      );
-  }, []);
-
-  return (
-    <div>
-      <h1>Music List</h1>
-      <ul>
-        {songs.map((song) => (
-          <li key={song.id}>
-            {song.name}
-            <audio controls>
-              <source src={song.path} type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
-export default MusicList;
+[
+  {
+    "id": 1,
+    "name": "018. QOOB   EXTINCT LANGUAGE (NORAJ CUE REMIX)",
+    "path": "/music/018. Qoob - Extinct Language (Noraj Cue Remix).mp3"
+  },
+  {
+    "id": 2,
+    "name": "10   TODD TERJE   SNOOZE FOR LOVE (DIXON REMIX)",
+    "path": "/music/10 - Todd Terje - Snooze For Love (Dixon Remix).mp3"
+  },
+  {
+    "id": 3,
+    "name": "ELMO HOPE TRIO.  COMPLETE STUDIO RECORDINGS CD 3   15   VI   ANN",
+    "path": "/music/Elmo Hope Trio.- Complete Studio Recordings CD 3 - 15 - Vi - Ann.mp3"
+  },
+  {
+    "id": 4,
+    "name": "PEDRO AGUIAR   6 AM AGAIN",
+    "path": "/music/Pedro Aguiar - 6 AM Again.mp3"
+  }
+]
