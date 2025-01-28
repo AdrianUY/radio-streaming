@@ -1,21 +1,12 @@
 import React from "react";
-
-
-// Lista de nombres reales de los archivos en la carpeta "public/music"
-const files = [
-  "Mi_Cancion_Favorita.mp3",
-  "Tema_De_Prueba.mp3",
-  "Nombre_Largo_De_Tema.mp3",
-  "Cancion_Final.mp3"
-];
+import musicList from "../musicList.json"; // Corrige la ruta para acceder al archivo JSON
 
 const SongList = () => {
-
   return (
     <div>
       <h1>Music List</h1>
       <ul>
-        {files.map((file, index) => {
+        {musicList.map((file, index) => {
           // Extraer el nombre sin extensión y formatearlo
           const name = file
             .replace(".mp3", "") // Quita la extensión .mp3
