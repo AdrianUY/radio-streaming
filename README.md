@@ -20,20 +20,12 @@ Si prefieres simplificar los pasos, puedes usar el archivo start-radio.sh:
 Uso del script start-radio.sh
 Asegúrate de que el script esté en la raíz del proyecto.
 Dale permisos de ejecución:
-bash
 chmod +x start-radio.sh
 Ejecútalo:
 ./start-radio.sh
 Esto ejecutará automáticamente el script de generación de la lista y levantará el servidor React.
 
-Contribuciones
-Para colaborar:
 
-Haz un fork del repositorio.
-Crea una nueva rama para tus cambios:
-bash
-Copiar
-Editar
-git checkout -b mi-nueva-funcionalidad
-Realiza un pull request cuando estés listo.
+
+
 
